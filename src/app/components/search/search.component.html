@@ -1,26 +1,28 @@
 <div class="container">
   <form class="form" [formGroup]="searchForm">
-    <div class="mb-3">
-      <input
-        [(ngModel)]="mealName"
-        (change)="filterMealByName()"
-        formControlName="name"
-        type="email"
-        class="form-control"
-        placeholder="search by name"
-      />
+    <div class="row rowBox">
+      <div class="mb-3 ms-3 mt-3 col-lg-4 col-md-3">
+        <input
+          [(ngModel)]="mealName"
+          (change)="filterMealByName()"
+          formControlName="name"
+          type="email"
+          class="form-control"
+          placeholder="search by name"
+        />
+      </div>
+      <div class="mb-3 ms-3 col-lg-4 col-md-3">
+        <input
+          [(ngModel)]="mealLetter"
+          (change)="filterMealByLetter()"
+          formControlName="firstLetter"
+          type="email"
+          class="form-control"
+          placeholder="search by first letter"
+        />
+      </div>
+      <button class="ms-4 btn btn-success col-lg-4 col-md-3">search</button>
     </div>
-    <div class="mb-3">
-      <input
-        [(ngModel)]="mealLetter"
-        (change)="filterMealByLetter()"
-        formControlName="firstLetter"
-        type="email"
-        class="form-control"
-        placeholder="search by first letter"
-      />
-    </div>
-    <button class="btn btn-success">search</button>
   </form>
   <div class="row">
     <div

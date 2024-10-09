@@ -32,3 +32,14 @@
     }
   }
 }
+@media (max-width: 775px) {
+  .container {
+    margin: 0 !important;
+    padding-left: 100px;
+  }
+
+  .box {
+    min-width: 80%;
+    min-height: 250px;
+  }
+}
