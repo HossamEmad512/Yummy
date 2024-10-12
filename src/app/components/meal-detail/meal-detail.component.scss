@@ -49,7 +49,7 @@
     height: 50px;
   }
 }
-@media ( max-width: 850px){
+@media ( max-width: 890px){
       .container {
         width: 350px!important;
         margin: 0 !important;
@@ -76,8 +76,78 @@ button {
   margin-bottom: 10px;
 }
 }
-
 @media (max-width: 790px) {
+
+  .container {
+      width: 350px !important;
+      margin: 0 !important;
+      padding-left: 100px;
+
+      img {
+        width: 330px !important;
+        margin-top: 20px !important;
+        height: 350px;
+        border-radius: 5%;
+      }
+
+    }
+
+    .box {
+      flex-direction: row;
+      p{
+
+        width: 240px !important;
+      }
+
+      .content {
+        margin: 0;
+        margin-left: 50% !important;
+      }
+    }
+
+    button {
+      margin-left: 50%;
+      margin-bottom: 10px;
+    }
+}
+@media (max-width: 740px) {
+  .container {
+    width: 350px !important;
+    margin: 0 !important;
+    padding-left: 100px;
+
+    img {
+      width: 250% !important;
+      margin-top: 20px !important;
+      height: 200px !important;
+      border-radius: 5%;
+    }
+
+  }
+
+  .box {
+    flex-direction: column;
+    width: 250px !important;
+    h3{
+      width: 260px !important;
+    }
+    .content {
+      p{
+        width: 200% !important;
+
+      }
+      margin: 0;
+      margin-left: 10% !important;
+    }
+  }
+
+  button {
+    margin: 0 !important;
+    margin-left: 25% !important;
+    margin-bottom: 30px !important;
+  }
+}
+@media (max-width: 500px) {
   .container {
     width: 350px !important;
     margin: 0 !important;
@@ -95,14 +165,17 @@ button {
   .box {
     flex-direction: column;
     width: 250px !important;
-    h3{
+
+    h3 {
       width: 260px !important;
     }
+
     .content {
-      p{
+      p {
         width: 200px !important;
 
       }
+
       margin: 0;
       margin-left: 10% !important;
     }
